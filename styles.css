@@ -1,6 +1,9 @@
 :root {
  --grid-cols: 1;
  --grid-rows: 1;
+ --primary-color: #333;
+ --primary-light: #ededed;
+ --secondary-light: #fefefe;
 }
 
 *{
@@ -18,21 +21,80 @@ body{
  width: 100vw;
 }
 
+main {
+ display: flex;
+ padding: 2rem;
+ justify-content: space-evenly;
+}
+.settings{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding:2rem;
+}
+
+.reset{
+ background: rgb(197, 197, 197);
+ border: none;
+ border-radius: 5px;
+ color: rgb(78, 77, 77);
+ font-size: 1.2rem;
+ padding: 0.5rem;
+ box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.715);
+ 
+}
+
+.reset:hover{
+ background: rgb(187, 187, 187);
+ cursor: pointer;
+ box-shadow: none;
+}
+.reset:focus{
+ outline: none;
+ border: 2px dashed rgb(78, 77, 77);
+ box-shadow: none;
+}
 #container {
  display: grid;
  grid-template-columns: repeat(var(--grid-cols), 1fr);
  grid-template-rows: repeat(var(--grid-rows), 1fr);
  grid-gap: none;
- height: 80vh;
- width: 80vw;
+ height: 700px;
+ width: 700px;
  border: 1px solid rgb(78, 77, 77);
 }
 
 .grid-item {
  background: rgb(244, 238, 238);
- border: .5px solid rgb(210, 210, 210);
+ border: 1px solid rgb(210, 210, 210);
 }
 
 .colored {
- background: rgb(0, 0, 0);
+ background-color: var(--primary-color);
+}
+
+.title {
+ font-size: 3rem;
+ font-weight: bold;
+ color: rgb(38, 27, 27);
+ text-align: center;
+}
+
+input[type='color'] {
+ -webkit-appearance: none;
+ width: 57px;
+ height: 40px;
+ border: none;
+ margin: 1rem
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+ padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+ border: none;
+ border-radius: 5px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
