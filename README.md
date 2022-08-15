@@ -1,6 +1,6 @@
 # The Odin Project Web Development 101
 ## Project: Etch-a-Sketch
-  This is a browser version of toy similar to MS PAINT or Etch-A-Sketch from The Odin Project [curriculum](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project).
+  This is a browser version of similar to MS PAINT or Etch-A-Sketch from The Odin Project [curriculum](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project).
 
 
 
